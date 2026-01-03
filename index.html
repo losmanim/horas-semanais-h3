@@ -1,189 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horarios semanal - H3</title>
+    <title>Biblioteca Fancybox</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.js"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href='../dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="../dist/simple-lightbox.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <header>
-        <i class="fa-duotone fa-solid fa-infinity"></i>
         <div class="title">
-            <h1>Horarios semanal - H3</h1>
+            <h1>Registros de Horas Semanal</h1>
+            <p><i class="text-primary">H3</i> New hamburgology - Campus São João</p>
         </div>
-        <nav>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Acessar Rápido
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#primeiraSemana">Primeira Semana</a></li>
-                    <li><a class="dropdown-item" href="#segundaSemana">Segunda Semana</a></li>
-                    <li><a class="dropdown-item" href="#terceiraSemana">Terceira Semana</a></li>
-                    <li><a class="dropdown-item" href="#quartaSemana">Quarta Semana</a></li>
-                    <li><a class="dropdown-item" href="#quintaSemana">Quinta Semana</a></li>
-                    <li><a class="dropdown-item" href="#sextaSemana">Sexta Semana</a></li>
-                    <li><a class="dropdown-item" href="#setimaSemana">Setima Semana</a></li>
-                    <li><a class="dropdown-item" href="#oitavaSemana">Oitava Semana</a></li>
-                    <li><a class="dropdown-item" href="#nonaSemana">Nona Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaSemana">Decima Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaPrimeiraSemana">Decima Primeira Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaSegundaSemana">Decima Segunda Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaTerceiraSemana">Decima Terceira Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaQuartaSemana">Decima Quarta Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaQuintaSemana">Decima Quinta Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaSextaSemana">Decima Sexta Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaSetimaSemana">Decima Setima Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaOitavaSemana">Decima Oitava Semana</a></li>
-                    <li><a class="dropdown-item" href="#decimaNonaSemana">Decima Nona Semana</a></li>
-                    <li><a class="dropdown-item" href="#VigesimaSemana">Vigesima Semana</a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="logo">
+            <i class="fa-solid fa-gears"></i>
+        </div>
     </header>
     <main>
         <section>
-            <div class="gallery">	
-                <a href="img/PrimeiraSemana.jpeg.jpg" class="big"><img src="img/PrimeiraSemana.jpegimages/thumbs/thumb1.jpg" alt="" title="Beautiful Image" /></a>
-                <a href="images/image2.jpg"><img src="images/thumbs/thumb2.jpg" alt="" title=""/></a>
-                <a href="images/image3.jpg"><img src="images/thumbs/thumb3.jpg" alt="" title="Beautiful Image"/></a>
-                <a href="images/image4.jpg"><img src="images/thumbs/thumb4.jpg" alt="" title=""/></a>
-
-                <div class="clear"></div>
-                
-                <a href="images/image5.jpg"><img src="images/thumbs/thumb5.jpg" alt="" title=""/></a>
-                <a href="images/image6.jpg"><img src="images/thumbs/thumb6.jpg" alt="" title=""/></a>
-                <a href="images/image7.jpg" class="big"><img src="images/thumbs/thumb7.jpg" alt="" title=""/></a>
-                <a href="images/image8.jpg"><img src="images/thumbs/thumb8.jpg" alt="" title=""/></a>
-                
-                <div class="clear"></div>
-                
-                <a href="images/image9.jpg" class="big"><img src="images/thumbs/thumb9.jpg" alt="" title=""/></a>
-                <a href="images/image10.jpg"><img src="images/thumbs/thumb10.jpg" alt="" title=""/></a>
-                <a href="images/image11.jpg"><img src="images/thumbs/thumb11.jpg" alt="" title=""/></a>
-                <a href="images/image12.jpg"><img src="images/thumbs/thumb12.jpg" alt="" title=""/></a>
-                <div class="clear"></div>
-                
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="title">
-                    <h2>Primeira Semana</h2>
-                    <p>H3 - Campus São João, Porto</p>
-                </div>
-                <div class="img" id="primeiraSemana">
-                    <img src="img/PrimeiraSemana.jpeg" width="1535" height="678" alt="foto horarios da primeira semana">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="title">
-                    <h2>Segunda Semana</h2>
-                    <p>H3 - Campus São João, Porto</p>
-                </div>
-                <div class="img" id="segundaSemana">
-                    <img src="img/SegundaSemana.jpeg" alt="foto horarios da segunda semana">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="title">
-                    <h2>Terceira Semana</h2>
-                    <p>H3 - Campus São João, Porto</p>
-                </div>
-                <div class="img" id="terceiraSemana">
-                    <img src="img/imgDeTodosLa.jpeg" width="1535" height="678" alt="foto horarios da primeira semana">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="title">
-                    <h2>Quarta Semana</h2>
-                    <p>H3 - Campus São João, Porto</p>
-                </div>
-                <div class="img" id="quartaSemana">
-                    <img src="img/QuartaSemana.jpeg" width="1535" height="678" alt="foto horarios da quarta semana">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="title">
-                    <h2>Quinta Semana</h2>
-                    <p>H3 - Campus São João, Porto</p>
-                </div>
-            </div>
-            <div class="img" id="quintaSemana">
-                <img src="img/quintaSemana.jpeg" width="1535" height="678" alt="foto horarios da quinta semana">
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="title">
-                    <h2>Sexta Semana</h2>
-                    <p>H3 - Campus São João, Porto</p>
-                </div>
-                <div class="img" id="sextaSemana">
-                    <img src="img/sextaSemana.jpeg" width="1535" height="678" alt="foto horarios da sexta semana ">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="title">
-                    <h2>Sétima Semana</h2>
-                    <p>H3 - Campus São João, Porto</p>
-                </div>
-                <div class="img">
-                    <img src="img/setimaSemana.jpeg" width="1535" height="678" alt="foto horarios da sétima semana">
-                </div>
+            <div class="container-fluid d-flex align-items-center justify-content-center">
+                <!-- Imagem simples -->
+                <a href="img/imgDeTodosLa.jpeg" data-fancybox>
+                    <img src="img/imgDeTodosLa-P.jpeg" alt="Imagem como todos por la">
+                </a>
+                <!-- Galeria -->
+                <div class="galeria">
+                    <a href="img/PrimeiraSemana.jpeg" data-fancybox="galeria" data-caption="Primeira Semana">
+                        <img src="img/1semana.jpg" width="350px">
+                    </a>
+                    <a href="img/SegundaSemana.jpeg" data-fancybox="galeria" data-caption="Segunda Semana">
+                        <img src="img/2semana.jpg" width="350px">
+                    </a>
+                    <a href="img/Terceira-Semana.jpeg" data-fancybox="galeria" data-caption="Terceira Semana">
+                        <img src="img/3semana.jpg" width="350px">
+                    </a>
+                    <a href="img/QuartaSemana.jpeg" data-fancybox="galeria" data-caption="Quarta Semana">
+                        <img src="img/4semana.jpg" width="350px">
+                    </a>
+                    <a href="img/quintaSemana.jpeg" data-fancybox="galeria" data-caption="Quinta Semana">
+                        <img src="img/5semana.jpg" width="350px">
+                    </a>
+                    <a href="img/sextaSemana.jpeg" data-fancybox="galeria" data-caption="Sexta Semana">
+                        <img src="img/6semana.jpg" width="350px">
+                    </a>
+                    <a href="img/setimaSemana.jpeg" data-fancybox="galeria" data-caption="Sétima Semana">
+                        <img src="img/7semana.jpg" width="350px">
+                    </a>
+                    <a href="img/oitavaSemana.jpeg" data-fancybox="galeria" data-caption="Oitava Semana">
+                        <img src="img/8semana.jpg" width="350px">
+                    </a>
+                    <a href="img/nonaSemana.jpeg" data-fancybox="galeria" data-caption="Nona Semana">
+                        <img src="img/9semana.jpg" width="350px">
+                    </a>
+                    <a href="img/decimaSemana.jpeg" data-fancybox="galeria" data-caption="Décima Semana">
+                        <img src="img/10semana.jpg" width="350px">
+                    </a>
+                    <a href="img/decimaPrimeiraSemana.jpeg" data-fancybox="galeria" data-caption="Décima Primeira Semana">
+                        <img src="img/11semana.jpg" width="350px">
+                    </a>
+                    <a href="img/decimaSegundaSemana.jpeg" data-fancybox="galeria" data-caption="Décima Segunda Semana">
+                        <img src="img/12semana.jpg" width="350px">
+                    </a>
+                    <a href="img/decimaTerceiraSemana.jpeg" data-fancybox="galeria" data-caption="Décima Terceira Semana">
+                        <img src="img/13semana.jpg" width="350px">
+                    </a>
+                    <a href="img/decimaQuartaSemana.jpeg" data-fancybox="galeria" data-caption="Décima Quarta Semana">
+                        <img src="img/14semana.jpg" width="350px">
+                    </a>
+                    <a href="img/decimaQuintaSemana.jpeg" data-fancybox="galeria" data-caption="Décima Quinta Semana">
+                        <img src="img/15semana.jpg" width="350px">
+                    </a>
+                    <a href="img/decimaSextaSemana.jpeg" data-fancybox="galeria" data-caption="Décima Sexta Semana">
+                        <img src="img/16semana.jpg" width="350px">
+                    </a>
+                    <a href="img/decimaSetimaSemana.jpeg" data-fancybox="galeria" data-caption="Décima Sétima Semana">
+                        <img src="img/17semana.jpg" width="350px">
+                    </a>
+                    <a href="img/decimaOitavaSemana.jpeg" data-fancybox="galeria" data-caption="Décima Oitava Semana">
+                        <img src="img/18semana.jpg" width="350px">
+                </div>                       
             </div>
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
