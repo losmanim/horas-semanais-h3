@@ -73,6 +73,6 @@ main section .container {
     justify-content: center;
 }
 
-main section .container .galeria {
-    gap: 0.5rem;
+main section .container .galeria a {
+    padding: 0.5rem;
 }
