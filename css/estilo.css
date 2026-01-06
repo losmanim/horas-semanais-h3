@@ -72,3 +72,7 @@ main section .container {
     align-items: center;
     justify-content: center;
 }
+
+main section .container .galeria {
+    gap: 0.5rem;
+}
